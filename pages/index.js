@@ -13,7 +13,7 @@ function HomePage() {
 
     return (
         <>
-            <CSSReset />
+            <CSSreset />
             <div style={{
                 display: "flex",
                 flexDirection: "column",
