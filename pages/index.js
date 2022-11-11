@@ -1,6 +1,6 @@
 import config from "../config.json";
 import styled from "styled-components";
-import { CSSreset } from "../src/components/CSSReset";
+import { CSSreset } from "../src/components/CSSreset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 
