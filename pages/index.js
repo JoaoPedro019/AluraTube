@@ -42,26 +42,34 @@ export default HomePage
 
 
 const StyledHeader = styled.div`
-    img {
+    .img__user {
         width: 80px;
         height: 80px;
         border-radius: 50%;
     }
     .user-info {
-        margin-top: 50px;
+        margin-top: 20px;
         display: flex;
         align-items: center;
         width: 100%;
         padding: 16px 32px;
         gap: 16px;
     }
+
+    .banner {
+        margin-top: 40px;
+        display:flex;
+        width: 100%;
+        height: calc(16.1290322581vw - 1px);
+        
+    }
 `;
 function Header() {
     return (
         <StyledHeader>
-            {/* <img src="banner" /> */}
+            {<img src="https://images.unsplash.com/photo-1568952433726-3896e3881c65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" className="banner"/> }
             <section className="user-info">
-                <img src={`https://github.com/${config.github}.png`} />
+                <img src={`https://github.com/${config.github}.png`} className="img__user" />
                 <div>
                     <h2>
                         {config.name}
