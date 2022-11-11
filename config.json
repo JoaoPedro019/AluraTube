@@ -1,0 +1,115 @@
+{
+    "name": "João Pedro",
+    "job": "Dev Front-End",
+    "github": "JoaoPedro019",
+    "playlists": {
+        "jogos": [
+            {
+                "title": "TONYBOY É O JOGADOR MAIS FRIO DO WARZONE?",
+                "url": "https://www.youtube.com/watch?v=T5b62-XdgRQ",
+                "thumb": "https://i.ytimg.com/vi/T5b62-XdgRQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9wTlwYXBXXwWiU1ilCo4z0djC0g"
+            },
+            {
+                "title": "COD WARZONE SMZINHO - NUNCA CONFIE NESSE TIME",
+                "url": "https://www.youtube.com/watch?v=nF9MSK6Fuq0",
+                "thumb": "https://i.ytimg.com/vi/nF9MSK6Fuq0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAUMcFM7VeOJnZKFXdhw3qnDPa3SA"
+            },
+            {
+                "title": "MOMENTOS DE FELICIDADE - GOD OF WAR 3",
+                "url": "https://www.youtube.com/watch?v=Ix_jwAZ1NQE",
+                "thumb": "https://i.ytimg.com/vi/Ix_jwAZ1NQE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAi4OMF6-UkiPN7fwTzilcfe0RMvw"
+            },
+            {
+                "title": "O PIÃO DA CASA PRÓPRIA! - Jogos da Galera (Parte 69)",
+                "url": "https://www.youtube.com/watch?v=YU-9Znp3Lvw",
+                "thumb": "https://i.ytimg.com/vi/YU-9Znp3Lvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK558-rOVe-hxsipSf5NEh-b10uQ"
+            },
+            {
+                "title": "Warframe | Prime Time #326",
+                "url": "https://www.youtube.com/watch?v=Ijvv-sW4vJU",
+                "thumb": "https://i.ytimg.com/vi/Ijvv-sW4vJU/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhEIFsoZTAP&rs=AOn4CLB6Wfi-5Y9rPK0P01B0RgFo5RWoBg"
+            },
+            {
+                "title": "MAETHE METAFORANDO O ALANZOKA NA LIVE",
+                "url": "https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=Fpq-r_wOhXY",
+                "thumb": "https://i.ytimg.com/vi/Fpq-r_wOhXY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeu4vtGEiuWkmZ-eJmTYLGbnkDZQ"
+            }
+            
+        ],
+        "front-end": [
+            
+            {
+                "title": "Criando uma Landing Page! Rafa Balerini",
+                "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
+                "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
+            },
+            {
+                "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
+                "url": "https://www.youtube.com/watch?v=J4BVaXkwmM8",
+                "thumb": "https://img.youtube.com/vi/J4BVaXkwmM8/hqdefault.jpg"
+            },
+            {
+                "title": "O QUE SÃO FRAMEWORKS E BIBLIOTECAS? QUAIS AS DIFERENÇAS?",
+                "url": "https://www.youtube.com/watch?v=dp0zB4n3MUs",
+                "thumb": "https://img.youtube.com/vi/dp0zB4n3MUs/hqdefault.jpg"
+            },
+            {
+                "title": "Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador",
+                "url": "https://www.youtube.com/watch?v=Yf0rC7dERjg",
+                "thumb": "https://img.youtube.com/vi/Yf0rC7dERjg/hqdefault.jpg"
+            },
+            {
+                "title": "O que todo iniciante em Front End deveria aprender | Como manipular arrays e objetos em JavaScript",
+                "url": "https://www.youtube.com/watch?v=yS7AcF-xRUg",
+                "thumb": "https://img.youtube.com/vi/yS7AcF-xRUg/hqdefault.jpg"
+            },
+            {
+                "title": "5 Erros Históricos do CSS",
+                "url": "https://www.youtube.com/watch?v=HNjkqONzGS0",
+                "thumb": "https://img.youtube.com/vi/HNjkqONzGS0/hqdefault.jpg"
+            },
+            {
+                "title": "Deploy de Front End ATUALIZADO! | O que eu uso para hospedagem de Front End",
+                "url": "https://www.youtube.com/watch?v=d9c0r-J6CdM",
+                "thumb": "https://img.youtube.com/vi/d9c0r-J6CdM/hqdefault.jpg"
+            }
+        ],
+        "Recomendados": [
+            {
+                "title": "DEI UM CARRO NOVO DE PRESENTE PRA MINHA NAMORADA!",
+                "url": "https://www.youtube.com/watch?v=62HE6aBugYU",
+                "thumb": "https://i.ytimg.com/vi/62HE6aBugYU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAcjQbpIHYOgMD6hZR_awMRhVFNOA"
+            },
+            {
+                "title": "ASSISTA ESSE VÍDEO SEM MEDO!",
+                "url": "https://www.youtube.com/watch?v=Hdmn7l0nShE",
+                "thumb": "https://i.ytimg.com/vi/Hdmn7l0nShE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCw7XbFgjzhHn6DzoZz-l5OX9qSIQ"
+            },
+            {
+                "title": "ASMR Programming - Modern Login Page UI Design - No Talking",
+                "url": "https://www.youtube.com/watch?v=9g7rFjOuggU",
+                "thumb": "https://i.ytimg.com/vi/9g7rFjOuggU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBcelGtNkSrrx-HTe6W7Fj_c6r1JQ"
+            },
+            {
+                "title": "Tiltar os caras com uma Sniper Rosinha é...satisfátorio!",
+                "url": "https://www.youtube.com/watch?v=d5QDQsZV5Ik",
+                "thumb": "https://i.ytimg.com/vi/d5QDQsZV5Ik/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEvBmXLKAYKUns0NtEVs5kuHUrVw"
+            },
+            {
+                "title": "TENTE NÃO RIR COM OS MOMENTOS MAIS VISTOS DO CANAL!",
+                "url": "https://www.youtube.com/watch?v=0pr1gEO_D3s",
+                "thumb": "https://i.ytimg.com/vi/0pr1gEO_D3s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQzzy2Y7J2p_NRIy4lgQDDfdt7vQ"
+            },
+            {
+                "title": "ESSE É O MEU CARRO NOVO!",
+                "url": "https://www.youtube.com/watch?v=OZ7Fd-89W8k",
+                "thumb": "https://i.ytimg.com/vi/OZ7Fd-89W8k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDX2c_Pqc--ZIp6ko34UyMS1mBZDQ"
+            },
+            {
+                "title": "NOVO EMPREENDIMENTO! ELES VÃO COMEÇAR A VENDER CARROS...",
+                "url": "https://www.youtube.com/watch?v=YHiMMQSa1EU",
+                "thumb": "https://i.ytimg.com/vi/YHiMMQSa1EU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBjRtDsYjdO5hyCNxprFT1msdcXUQ"
+            }
+        ]
+    }
+}
