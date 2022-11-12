@@ -2,11 +2,6 @@
     "name": "João Pedro",
     "job": "Dev Front-End",
     "github": "JoaoPedro019",
-    "favorito": {
-
-
-    },
-    
     "playlists": {
         "jogos": [
             {
@@ -39,10 +34,8 @@
                 "url": "https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=Fpq-r_wOhXY",
                 "thumb": "https://i.ytimg.com/vi/Fpq-r_wOhXY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeu4vtGEiuWkmZ-eJmTYLGbnkDZQ"
             }
-            
         ],
         "front-end": [
-            
             {
                 "title": "Criando uma Landing Page! Rafa Balerini",
                 "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
@@ -116,5 +109,25 @@
                 "thumb": "https://i.ytimg.com/vi/YHiMMQSa1EU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBjRtDsYjdO5hyCNxprFT1msdcXUQ"
             }
         ]
-    }
+    },
+    
+    "Youtubers":{
+    "Favoritos": [
+        {
+            "title": "Rafaella Ballerini",
+            "url": "https://www.youtube.com/c/rafaellaballerini",
+            "thumb": "https://yt3.ggpht.com/84ALFuw4UCyfL1TyoMU77D-I6xngPjn2X0kbx2bMAyoFzWwR-utcrbDn_MuNJcroPcmU9NdGGQ=s176-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "title": "República Coisa de Nerd",
+            "url": "https://www.youtube.com/channel/UChmOR1T5ZNnbRUba3lHRTOg",
+            "thumb": "https://yt3.ggpht.com/ytc/AMLnZu8DnW4uyAcekua7H6asHgMgG9pf4f4NJRnlwygk=s176-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "title": "Attekita Dev",
+            "url": "https://www.youtube.com/c/AttekitaDev",
+            "thumb": "https://yt3.ggpht.com/ytc/AMLnZu9h7Oi6GsvuU6F208UHTI6hrMa9edPOdLlCFcuKK14=s176-c-k-c0x00ffffff-no-rj"
+        }
+    
+    ]}
 }

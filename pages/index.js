@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { CSSreset } from "../src/components/CSSreset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import { StyledFavorits } from "../src/components/Favorits";
 
 function HomePage() {
     const estilosDaHomePage = {
@@ -25,6 +26,9 @@ function HomePage() {
                 <Timeline playlists={config.playlists}>
                     Conteúdo
                 </Timeline>
+                <Favorits Youtubers={config.Youtubers}>
+                    Conteúdo
+                </Favorits>
             </div>
         </>
     );
@@ -48,7 +52,7 @@ const StyledHeader = styled.div`
         border-radius: 50%;
     }
     .user-info {
-        margin-top: 20px;
+        margin-top: 1px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -57,17 +61,17 @@ const StyledHeader = styled.div`
     }
 
     .banner {
-        margin-top: 40px;
+        margin-top: 1px;
         display:flex;
         width: 100%;
-        height: calc(16.1290322581vw - 1px);
+        height: calc(16.1290322581vw - 0.5px);
         
     }
 `;
 function Header() {
     return (
         <StyledHeader>
-            {<img src="https://images.unsplash.com/photo-1568952433726-3896e3881c65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" className="banner"/> }
+            {<img src="https://images.unsplash.com/photo-1668162456452-11e6ca7c8608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" className="banner" />}
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} className="img__user" />
                 <div>
@@ -113,5 +117,36 @@ function Timeline(propriedades) {
                 )
             })}
         </StyledTimeline>
+    )
+
+};
+
+function Favorits(propriedades) {
+    const FavoritosNames = Object.keys(propriedades.Youtubers);
+    return (
+        <StyledFavorits>
+            {FavoritosNames.map((FavoritosName) => {
+                const Fav = propriedades.Youtubers[FavoritosName];
+                console.log(FavoritosName);
+                console.log(Fav);
+                return (
+                    <section>
+                        <h2>{FavoritosName}</h2>
+                        <div>
+                            {Fav.map((Fav) => {
+                                return (
+                                    <a href={Fav.url}>
+                                        <img src={Fav.thumb} />
+                                        <span>
+                                            {Fav.title}
+                                        </span>
+                                    </a>
+                                )
+                            })}
+                        </div>
+                    </section>
+                )
+            })}
+        </StyledFavorits>
     )
 }
