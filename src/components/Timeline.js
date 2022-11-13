@@ -5,6 +5,7 @@ export const StyledTimeline = styled.div`
   width: 100%;
   padding: 16px;
   overflow: hidden;
+
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
@@ -33,6 +34,23 @@ export const StyledTimeline = styled.div`
       grid-auto-columns: minmax(200px,1fr);
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
+
+      ::-webkit-scrollbar {
+            width: 8px;
+            height: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: gainsboro;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
       a {
         scroll-snap-align: start;
         span {
@@ -40,6 +58,7 @@ export const StyledTimeline = styled.div`
           display: block;
           padding-right: 24px;
           color: ${({ theme }) => theme.textColorBase || "#222222"};
+          
         }
       }
     }

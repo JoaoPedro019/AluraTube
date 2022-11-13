@@ -1,16 +1,16 @@
+import React from "React";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSreset } from "../src/components/CSSreset";
-import Menu from "../src/components/Menu";
+import Menu from "../src/components/Menu/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 import { StyledFavorits } from "../src/components/Favorits";
+import react from "react";
 
 function HomePage() {
-    const estilosDaHomePage = {
-        // backgroundColor: "red" 
-    };
+        const [valorDoFiltro, setValorDoFiltro] = react.useState("");
 
-    // console.log(config.playlists);
+    
 
     return (
         <>
@@ -21,9 +21,11 @@ function HomePage() {
                 flex: 1,
                 // backgroundColor: "red",
             }}>
-                <Menu />
+                 <Menu />
+                {/* Prop Drilling */}
+                <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
-                <Timeline playlists={config.playlists}>
+                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
                     Conteúdo
                 </Timeline>
                 <Favorits Youtubers={config.Youtubers}>
@@ -50,6 +52,7 @@ const StyledHeader = styled.div`
         width: 80px;
         height: 80px;
         border-radius: 50%;
+
     }
     .user-info {
         margin-top: 1px;
@@ -62,16 +65,18 @@ const StyledHeader = styled.div`
 
     .banner {
         margin-top: 1px;
-        display:flex;
+        display: flex;
         width: 100%;
-        height: calc(16.1290322581vw - 0.5px);
-        
+        height:  calc(16.1290322581vw - 1px);
+        background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmFja2dyb3VuZHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 `;
 function Header() {
     return (
         <StyledHeader>
-            {<img src="https://images.unsplash.com/photo-1668162456452-11e6ca7c8608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" className="banner" />}
+            {<img className="banner" />}
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} className="img__user" />
                 <div>
@@ -87,7 +92,7 @@ function Header() {
     )
 }
 
-function Timeline(propriedades) {
+function Timeline ({searchValue, ...propriedades}) {
     // console.log("Dentro do componente", propriedades.playlists);
     const playlistNames = Object.keys(propriedades.playlists);
     // Statement
@@ -99,12 +104,18 @@ function Timeline(propriedades) {
                 console.log(playlistName);
                 console.log(videos);
                 return (
-                    <section>
+                    <section key={playlistName}>
                         <h2>{playlistName}</h2>
                         <div>
-                            {videos.map((videos) => {
+                        {videos
+                                .filter((video) => {
+                                    const titleNormalized = video.title.toLowerCase();
+                                    const searchValueNormalized = searchValue.toLowerCase();
+                                    return titleNormalized.includes(searchValueNormalized)
+                                })
+                                .map((videos) => {
                                 return (
-                                    <a href={videos.url}>
+                                    <a key={videos.url} href={videos.url}>
                                         <img src={videos.thumb} />
                                         <span>
                                             {videos.title}
