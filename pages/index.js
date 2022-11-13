@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSreset } from "../src/components/CSSreset";
@@ -108,8 +108,8 @@ function Timeline ({searchValue, ...propriedades}) {
                         <h2>{playlistName}</h2>
                         <div>
                         {videos
-                                .filter((video) => {
-                                    const titleNormalized = video.title.toLowerCase();
+                                .filter((videos) => {
+                                    const titleNormalized = videos.title.toLowerCase();
                                     const searchValueNormalized = searchValue.toLowerCase();
                                     return titleNormalized.includes(searchValueNormalized)
                                 })
