@@ -1,6 +1,7 @@
 import React from "react";
+import react from "react";
 import styled from "styled-components";
-//import { ColorModeContext } from "./ColorMode";
+import { ColorModeContext } from "./ColorMode";
 
 const StyledSwitch = styled.div`
   background-color: #333333;
@@ -37,7 +38,7 @@ const StyledSwitch = styled.div`
 `;
 
 export default function DarkModeSwitch() {
-   // const contexto = React.useContext(ColorModeContext);
+  const contexto = react.useContext(ColorModeContext);
 
     return (
         <StyledSwitch>
