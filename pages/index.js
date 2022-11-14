@@ -48,6 +48,9 @@ export default HomePage
 
 
 const StyledHeader = styled.div`
+
+    background-color: ${({ theme }) => theme. backgroundLevel1};
+
     .img__user {
         width: 80px;
         height: 80px;
