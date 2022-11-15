@@ -7,7 +7,7 @@ const StyledSearch = styled.div`
   border: 1px solid ${({ theme }) => theme.borderBase};
   max-width: 425px;
   width: 100%;
-  border-radius: 2px;
+  border-radius: 40px 0 0 40px;
   overflow: hidden;
   
   input {
@@ -17,11 +17,16 @@ const StyledSearch = styled.div`
     outline: none;
     color: ${({ theme }) => theme.textColorBase};
     background-color: ${({ theme }) => theme.backgroundBase};
-  }
+    border-radius: 40px 0 0 40px;
+    margin-left: 32px;
+    padding: 0px 4px 0px 16px;
+}
+
   button {
     flex: 1;
     cursor: pointer;
     border: none;
+    border-radius: 0 40px 40px 0;
     background-color: ${({ theme }) => theme.backgroundLevel2};
     box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
     border-left: 1px solid ${({ theme }) => theme.borderBase};
@@ -31,17 +36,10 @@ const StyledSearch = styled.div`
       width: 64px;
       height: 40px;
     }
-  }
-`;
-
-// Home 
-// Menu
-// Search
-// Informação sempre desce
+  }`;
 
 export default function Search({ valorDoFiltro, setValorDoFiltro }) {
-  // const [valorDaBusca, setValorDaBusca] = React.useState("Teste");
-  // console.log("Search", valorDaBusca)
+ 
   const valorDaBusca = valorDoFiltro;
   const setValorDaBusca = setValorDoFiltro;
 

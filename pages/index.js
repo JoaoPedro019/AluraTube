@@ -1,15 +1,37 @@
-import React from "react";
+import react from "react";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSreset } from "../src/components/CSSreset";
 import Menu from "../src/components/Menu/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 import { StyledFavorits } from "../src/components/Favorits";
-import react from "react";
+import { videoService } from "../src/components/services/videoService";
+
 
 function HomePage() {
+        const service = videoService();
         const [valorDoFiltro, setValorDoFiltro] = react.useState("");
+        const [playlists, setPlaylists] = react.useState({});    
 
+        react.useEffect(() => {
+            console.log("useEffect");
+            service
+                .getAllVideos()
+                .then((dados) => {
+                    console.log(dados.data);
+                    const novasPlaylists = {};
+                    dados.data.forEach((video) => {
+                        if (!novasPlaylists[video.playlist]) novasPlaylists[video.playlist] = [];
+                        novasPlaylists[video.playlist] = [
+                            video,
+                            ...novasPlaylists[video.playlist],
+                        ];
+                    });
+    
+                    setPlaylists(novasPlaylists);
+                });
+        }, []);
+    
     
 
     return (
@@ -19,13 +41,11 @@ function HomePage() {
                 display: "flex",
                 flexDirection: "column",
                 flex: 1,
-                // backgroundColor: "red",
             }}>
                  <Menu />
-                {/* Prop Drilling */}
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
-                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
+                <Timeline searchValue={valorDoFiltro} playlists={playlists}>
                     Conteúdo
                 </Timeline>
                 <Favorits Youtubers={config.Youtubers}>
